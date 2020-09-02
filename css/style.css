@@ -1,0 +1,224 @@
+@font-face {
+	font-family: SF Pro;
+	src: url(../fonts/SF-Pro-Text-Regular.otf);
+	font-style: normal
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*border: 1px solid gray;*/
+}
+
+
+/* Tags */
+
+html {
+	background: url(../images/appearance_l.jpg);
+	min-height: 640px;
+}
+
+body {
+	font-family: 'SF Pro', sans-serif;
+	max-width: 1480px;
+	min-width: 200px;
+	flex-direction: column;
+}
+
+img {
+	width: 100%;
+	min-width: 260px;
+}
+
+a {
+	color: #444;
+	font-size: 1.2em;
+	margin-top: 0.4em;
+	margin-bottom: 1.5em;
+	padding-right: 13px;
+	letter-spacing: -0.35px;
+	text-decoration: none;
+	-webkit-animation: fade-in 1s 1s ease-in-out forwards;
+	animation: fade-in 1s 1s ease-in-out forwards;
+}
+
+header {
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	height: calc(100% - 44px);
+	flex-direction: column;
+	text-align: center;
+}
+
+h2 {
+	color: #333;
+	font-size: 4.2em;
+	font-weight: 600;
+	-webkit-animation: fade-in 1.3s 0.3s ease-in-out forwards;
+	animation: fade-in 1.3s 0.3s ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-in {
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* Common */
+
+.x-full {
+	width: 100%;
+}
+
+.y-full {
+	height: 100vh;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.background {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.transition {
+	transition: 1s all;
+}
+
+.margin {
+	margin: 0 auto;
+}
+
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* header */
+
+.title {
+	transition: all 0.7s 0.1s;
+}
+
+.outlink {
+	transition: all 0.4s 0.1s;
+}
+
+
+/*- macbook -*/
+
+.laptop {
+	width: 50%;
+	min-width: 640px;
+	min-height: 400px;
+	margin: 10% auto 0;
+	transition: 0.5s all;
+	transition-delay: 0.2s;
+	background: rgba(229, 229, 231, 0.2);
+	backdrop-filter: blur(120px);
+	border-radius: 20px;
+	z-index: 1;
+}
+
+.top-case {
+	transform: rotateX(60deg);
+}
+
+.top-case img {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 2px;
+}
+
+.keyboard,
+.shadow,
+.touchbar,
+.reflection {
+	position: absolute;
+	top: 0;
+}
+
+.shadow {
+	opacity: 0.5;
+}
+
+.keyboard {
+	z-index: 2;
+	transition: 1.5s all;
+	opacity: 1;
+}
+
+.touchbar {
+	z-index: 3;
+	transition: 1s all 0.5s;
+}
+
+.screen {
+	z-index: 2;
+	transition: 1.5s all;
+}
+
+.top {
+	z-index: 0;
+}
+
+.reflection {
+	transform: rotateX(180deg);
+	position: absolute;
+	width: 82%;
+	top: 0;
+	left: 9%;
+	right: 9%;
+	bottom: 0;
+	z-index: 10;
+}
+
+
+/* dark mode layer */
+
+.darkmode {
+	background-image: url(../images/macos.jpg);
+	transition: 1s opacity;
+}
+
+.layer .y-min {
+	min-height: 640px;
+}
+
+@media screen and (max-width: 652px) {
+	html {
+		overflow-x: hidden;
+	}
+	h2 {
+		font-size: 3.2em;
+	}
+	.laptop {
+		width: 96%;
+		min-width: 260px;
+	}
+}

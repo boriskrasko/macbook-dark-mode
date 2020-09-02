@@ -1,4 +1,9 @@
 # open-macbook-dark-mode
+
+## [GitHub pages](https://boriskrasko.github.io/open-macbook-dark-mode)
+
 Template with animation of moving macbook cover and auto dark mode
 
-http://ideveloper.by/open-macbook-dark-mode/index.html
+![light mode](https://boriskrasko.github.io/open-macbook-dark-mode/preview/open-macbook.png)
+
+![dark mode](https://boriskrasko.github.io/open-macbook-dark-mode/preview/open-macbook-dark-mode.png)

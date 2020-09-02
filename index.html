@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html class="background y-full">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MacBook opening animation</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body class="margin flex center">
+      <div class="layer darkmode background x-full y-full y-min hidden"></div>
+      <header class="flex center">
+         <h2 class="title hidden">Zacznij odkrywać.</h2>
+         <a href="https://help.apple.com/macOS/high-sierra/mac-basics" class="outlink hidden">To Twój pierwszy Mac? Rozejrzyj się i&nbsp;poznaj podstawy</a>
+      </header>
+      <section onmouseout="closeTopCase()" class="flex center margin">
+         <table onmouseover="openTopCase()" class="laptop flex center">
+            <tbody class="case x-full transition margin">
+               <tr>
+                  <td class="top-case transition">
+                     <img class="top" src="images/MacBook-Pro-16-inch-Touch-Bar-top.png" alt="top case">
+                     <img class="screen hidden" src="images/MacBook-Pro-6-inch-Touch-Bar-screen-desktop.png" alt="screen desktop">
+                  </td>
+               </tr>
+               <tr>
+                  <td class="bottom-case">
+                     <img class="keyboard" src="images/MacBook-Pro-16-inch-Touch-Bar-bottom.png" alt="keyboard">
+                     <img class="shadow" src="images/MacBook-Pro-16-inch-Touch-Bar-shadow.png" alt="shadow">
+                     <img class="reflection hidden transition" src="images/macOS-Big-Sur-Control-Center.png" alt="reflection">
+                     <img class="touchbar hidden" src="images/MacBook-Pro-16-inch-Touch-Bar-touchbar.png" alt="touch bar">
+                     <img src="images/transparent.png" alt="transparent">
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+      <script src="js/script.js"></script>
+   </body>
 </html>
