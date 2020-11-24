@@ -1,13 +1,13 @@
 const macbookTopCase = document.querySelector('.top-case'),
-			macbook = document.querySelector('.case');
-			touchBar = document.querySelector('.touchbar');
-			screen = document.querySelector('.screen');
-			darkBackgroundLayer = document.querySelector('.layer');
-			keyboard = document.querySelector('.keyboard');
-			reflection = document.querySelector('.reflection');
-			title = document.querySelector('.title');
-			subtitle = document.querySelector('.outlink');
-			laptop = document.querySelector('.laptop');
+	macbook = document.querySelector('.case'),
+	touchBar = document.querySelector('.touchbar'),
+	screen = document.querySelector('.screen'),
+	darkBackgroundLayer = document.querySelector('.layer'),
+	keyboard = document.querySelector('.keyboard'),
+	reflection = document.querySelector('.reflection'),
+	title = document.querySelector('.title'),
+	subtitle = document.querySelector('.outlink'),
+	laptop = document.querySelector('.laptop')
 
 function openTopCase() {
 	macbook.style.transform = 'scale(0.8)';
